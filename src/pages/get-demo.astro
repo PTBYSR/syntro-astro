@@ -11,27 +11,12 @@ import FaqLayout from "../components/infopages/Faq.astro";
 
     <!-- LEFT SIDE: Poster -->
     <div class="bg-base-300 bg-opacity-30 rounded-3xl p-12 flex flex-col justify-center text-left shadow-sm">
-      <h2 class="text-4xl font-semibold text-base-900 leading-tight mb-4">
-        Experience the future of <span class="text-main-400">customer support</span>
-      </h2>
-      <p class="text-base text-slate-600 mb-8 max-w-md">
-        See how Sakura AI transforms your customer experience with intelligent automation that feels genuinely human.
-      </p>
-      <div class="relative">
-        <img 
-          src="/ai-agent-demo.png" 
-          alt="AI Agent Illustration" 
-          class="rounded-2xl shadow-md border border-base-200"
-        />
-        <div class="absolute -bottom-6 -right-6 bg-main-400 text-white text-sm px-4 py-2 rounded-full shadow-lg">
-          Live Product Demo →
-        </div>
-      </div>
+     
     </div>
 
     <!-- RIGHT SIDE: Form -->
     <div class="bg-white rounded-3xl shadow-xl p-10">
-      <h3 class="text-2xl font-semibold text-base-900 mb-2">Request a Demo</h3>
+      <h3 class="text-4xl  text-base-900 mb-5">Request a Demo</h3>
       <p class="text-slate-500 text-sm mb-6">
         Fill out the form below and we’ll reach out within 24 hours to schedule your personalized walkthrough.
       </p>
@@ -84,13 +69,16 @@ import FaqLayout from "../components/infopages/Faq.astro";
             class="w-full border border-slate-300 focus:border-main-400 focus:ring-main-400 rounded-xl px-4 py-3 text-sm outline-none resize-none"
           ></textarea>
         </div>
+        <div class="items-center w-full flex justify-center">
+          
+          <button 
+            type="submit" 
+            class="w-fit px-7  bg-main-400 hover:bg-main-500 text-white font-medium rounded-3xl py-3 transition-all duration-200"
+          >
+            Schedule My Demo
+          </button>
+        </div>
 
-        <button 
-          type="submit" 
-          class="w-full bg-main-400 hover:bg-main-500 text-white font-medium rounded-3xl py-3 transition-all duration-200"
-        >
-          Schedule My Demo
-        </button>
 
         <p class="text-xs text-slate-400 text-center mt-2">
           By submitting, you agree to our privacy policy.

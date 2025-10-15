@@ -156,7 +156,7 @@ export default function FlightSimulationPage() {
           </div>
 
           {/* Chat Container */}
-          <div className="bg-accent-950 min-w-[400px] rounded-[34px] max-w-[500px] shadow-xl overflow-hidden mb-6">
+          <div className="bg-base-950 min-w-[400px] rounded-[34px] max-w-[500px] shadow-xl overflow-hidden mb-6">
             <div className="px-6 py-4">
               <div className="flex items-center justify-between pt-2">
                 <div className="flex items-center gap-3">
