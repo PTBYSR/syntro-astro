@@ -1,242 +1,79 @@
 ---
-import OptimizedImage from "../../layouts/utilities/OptimizedImage.astro";
+import RotatingOmni from "../animation/RotatingOmni";
+import MinimalChatbot from "../animation/MinimalChatbot";
 ---
 
-<section>
-  <div class="px-8 py-24 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-      <div class="lg:order-last">
-        <p class="text-sm leading-normal font-bold uppercase text-accent-600">
-          Tagline
-        </p>
-        <h2
-          class="text-xl leading-tight tracking-tight sm:text-2xl md:text-3xl capitalize lg:text-4xl mt-4 font-medium text-base-900">
-          Transforming the banking experience for a digital future
-        </h2>
-        <p class="text-base leading-normal mt-4 text-base-500 font-medium">
-          The fastest method for working together on staging and temporary
-          environments.
-        </p>
-        <div class="flex flex-wrap items-center gap-2 mx-auto mt-12">
-          <a
-            href="https://github.com/bekturaslan/syntro-astro"
-            class="flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none text-white bg-accent-600 hover:bg-accent-700 focus:ring-accent-500/50 h-9 px-4 py-2 text-sm font-medium rounded-md">
-            Get started
-          </a>
-          <a
-            href="https://github.com/bekturaslan/syntro-astro"
-            class="flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none text-base-500 bg-white hover:text-accent-500 ring-1 ring-base-200 focus:ring-accent-500 h-9 px-4 py-2 text-sm font-medium rounded-md">
-            Learn more details
-          </a>
-        </div>
-      </div>
-      <div class="lg:col-span-2">
-        <div class="p-5 bg-accent-50 rounded-2xl">
-          <OptimizedImage
-            src="/dashboard.png"
-            alt="#_"
-            width={900}
-            height={500}
-            loading={"eager"}
-            fetchpriority="high"
-            class="relative w-full ring-4 ring-base-50 border border-base-200 lg:rounded-2xl object-cover rounded"
-          />
-        </div>
-      </div>
+<section id="features">
+  <div class="px-8 pb-20 mx-auto md:px-12 lg:px-12 max-w-7xl">
+    <div class="text-center max-w-2xl mx-auto lg:text-balance">
+      
+      <h2
+        class="text-xl leading-tight tracking-tight sm:text-2xl md:text-3xl capitalize lg:text-4xl mt-4 font-medium text-base-900 lg:text-balance"
+      >
+       Your SOPs, your rules, your AI-agents.
+      </h2>
+      <p class="text-base leading-normal mt-4 text-base-500 font-medium">
+        Tailor every interaction to your SOPs and brand for complete transparency and desired outcomes.
+      </p>
     </div>
-    <div
-      class="gap-x-2 gap-y-14 mt-12 lg:gap-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      <div>
-        <div>
-          <h3
-            class="text-base leading-normal sm:text-lg md:text-xl text-base-900 font-medium">
-            Innovative Design
-          </h3>
-          <p class="text-base leading-normal mt-2 text-base-500 font-medium">
-            Our cutting-edge design offers a fresh, modern look that transforms
-            your project into a standout experience.
-          </p>
+
+    <div class="max-w-7l mx-auto py-16 px-6">
+        
+
+      <div class="grid grid-cols-3 grid-rows-2 gap-6">
+        {/* 1️⃣ Voice/Chat/Email Card */}
+        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300">
+          <div>
+            <h3 class="text-3xl   text-slate-800 mb-4">
+              Real-time Monitoring
+            </h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Monitor, analyze, and interrupt every conversations your AI agents has with your customers.
+            </p>
+          </div>
+<div>
+  <img src="/monitor.svg" alt="Monitor" class=" " />
+</div>
+         
         </div>
-        <ul
-          role="list"
-          class="space-y-1 mt-6 text-base font-medium text-base-900">
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Revolutionizing communication
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Enhancing productivity
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <h3
-            class="text-base leading-normal sm:text-lg md:text-xl text-base-900 font-medium">
-            Powerful Functionality
-          </h3>
-          <p class="text-base leading-normal mt-2 text-base-500 font-medium">
-            Equipped with advanced features and tools, our solution effortlessly
-            manages complex tasks and workflows.
-          </p>
+
+        {/* 2️⃣ Language Card */}
+        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300" >
+          <div>
+            <h3 class="text-3xl   text-slate-800 mb-4">
+              Fine-tuning
+            </h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Completely fine-tune the AI agents to follow your brand guidelines for tone, style, and personality.
+            </p>
+          </div>
+<div class="h-full  w-full flex justify-center items-center">
+  <div class="flex items-center relative h-4 w-full ">
+                <img src="/gifs/g1.gif" alt="Chat" class="w-24 h-24 -bottom-[110px] right-[90px]  absolute" />
+                <img src="/gifs/g2.gif" alt="Chat" class="w-32 h-32 -top-[90px] absolute" />
+                <img src="/gifs/g3.gif" alt="Chat" class="w-20 h-20 right-[30px] absolute" />
+    </div>
+</div>
+          
         </div>
-        <ul
-          role="list"
-          class="space-y-1 mt-6 text-base font-medium text-base-900">
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Unlocking innovative solutions
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Enabling interoperability
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <h3
-            class="text-base leading-normal sm:text-lg md:text-xl text-base-900 font-medium">
-            Easy Integration
-          </h3>
-          <p class="text-base leading-normal mt-2 text-base-500 font-medium">
-            Integrating with existing systems is smooth and hassle-free, thanks
-            to our incredible flexible approach.
-          </p>
+
+        {/* 3️⃣ CSAT Rating Card */}
+        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300 " >
+         
+<div>
+            <h3 class="text-3xl   text-slate-800 mb-4">
+              SOPs Integration
+            </h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Seamlessly integrate your Standard Operating Procedures (SOPs) to ensure consistent and accurate customer interactions.
+            </p>
+          </div>
+          
+<div>
+  <img src="/sop.svg" alt="SOP" class=" " />
+</div>
+
         </div>
-        <ul
-          role="list"
-          class="space-y-1 mt-6 text-base font-medium text-base-900">
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Streamlining operations
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="flex items-center gap-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check size-5 text-accent-600"
-                slot="icon">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
-                  stroke-width="0"
-                  fill="currentColor">
-                </path>
-              </svg>
-              <span class="text-base leading-normal">
-                Simplifying implementation
-              </span>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

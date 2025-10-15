@@ -150,11 +150,12 @@ if (isLocalImage) {
       </div>
     )
   ) : (
-    /* External images */
-    <Image
+    /* External images - use regular img tag to avoid fetch issues */
+    <img
       src={src}
       alt={alt}
-      inferSize={true}
+      width={width}
+      height={height}
       loading={loading}
       decoding={decoding}
       style={style}
