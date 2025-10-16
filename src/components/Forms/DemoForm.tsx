@@ -100,7 +100,7 @@ const DemoForm = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 md:px-12 lg:px-16 items-center">
         {/* LEFT SIDE */}
         {/* LEFT SIDE */}
-        <div className="rounded-3xl p-12 flex flex-col justify-center text-left">
+        <div className="rounded-3xl md:p-12 flex flex-col justify-center text-left">
           <p className="text-sm text-white mb-4">Schedule a demo</p>
           <h2 className="text-4xl mb-6 leading-tight text-white">
             Elevate customer service with intelligent AI automation.
