@@ -7,7 +7,100 @@ import { Linkedin, Twitter } from "lucide-react";
 
 <BaseLayout>
 
+<section id="sakura-timeline">
+  <div class="md:px-8 px-3 py-20 mx-auto md:px-12 lg:px-12 max-w-4xl">
+    <div class="text-center max-w-2xl mx-auto lg:text-balance mb-12">
+      <h2
+        class="text-3xl leading-tight tracking-tight sm:text-3xl md:text-4xl capitalize lg:text-5xl mt-4 font-medium text-base-900 lg:text-balance"
+      >
+        The Sakura Journey 🌸
+      </h2>
+      <p class="text-base leading-normal mt-4 text-base-500 font-medium">
+        Key milestones in the development and launch of our AI solution.
+      </p>
+    </div>
 
+    <div class="relative wrap overflow-hidden md:p-10 h-full">
+      <div
+        class="border-2-2 absolute border-opacity-20 border-main-400 h-full border"
+        style="left: 50%"
+      ></div>
+
+      <div class="mb-8 flex justify-between items-center w-full right-timeline">
+        <div class="order-1 w-5/12"></div>
+
+        <div class="z-20 flex items-center order-1 bg-main-400  w-3 h-3 rounded-full">
+          </div>
+        <div class="order-1  bg-opacity-30 w-5/12 md:px-6 md:py-4">
+          <div class="text-xs font-bold text-main-700 uppercase mb-1">
+            BIRTH
+          </div>
+          <p class="text-gray-600 text-sm font-medium mb-1">July, 2025</p>
+          <h3 class="mb-3 font-medium text-lg md:text-xl text-slate-800">
+            Sakura was born
+          </h3>
+          <p class="text-sm text-gray-700">
+            The initial thought process and research on the market began, laying the groundwork for the project's vision.
+          </p>
+          <a href="#" class="text-sm mt-3 flex items-center text-main-400 font-medium hover:text-main-500 transition duration-150 ease-in-out">
+            Read Insights &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mb-8 flex justify-between items-center w-full left-timeline">
+        <div class="order-1 rounded-lg w-5/12 md:px-6 md:py-4">
+          <div class="text-xs font-bold text-green-700 uppercase mb-1">
+            CUSTOMER-FIRST
+          </div>
+          <p class="text-gray-600 text-sm font-medium mb-1">September, 2025</p>
+          <h3 class="mb-3 font-medium text-lg md:text-xl text-slate-800">
+            Building the MVP and talking to customers
+          </h3>
+          <p class="text-sm leading-snug tracking-wide text-gray-700">
+            Adopted a customer-first approach by having in-depth conversations with guys at Kuda, Paystack, Heirs, Mantrac, LandWey, and more.
+          </p>
+          <a href="#" class="text-sm mt-3 flex items-center text-main-400 font-medium hover:text-main-500 transition duration-150 ease-in-out">
+            View Research Summary &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="z-20 flex items-center order-1 bg-green-500 shadow-xl w-3 h-3 rounded-full">
+          </div>
+        <div class="order-1 w-5/12"></div>
+      </div>
+
+      <div class="mb-8 flex justify-between items-center w-full right-timeline">
+        <div class="order-1 w-5/12"></div>
+        <div class="z-20 flex items-center order-1 bg-orange-500 shadow-xl w-3 h-3 rounded-full">
+          </div>
+        <div class="order-1  w-5/12 md:px-6 md:py-4">
+          <div class="text-xs font-bold text-orange-700 uppercase mb-1">
+            JOB
+          </div>
+          <p class="text-gray-600 text-sm font-medium mb-1">October, 2025</p>
+          <h3 class="mb-3 font-medium text-lg md:text-xl text-slate-800">
+            Landed our first Client
+          </h3>
+          <p class="text-sm leading-snug tracking-wide text-gray-700">
+            We are currently building a stable version of Sakura while working closely with our first client to deliver optimal results and gather real-world feedback.
+          </p>
+          <a href="#" class="text-sm mt-3 flex items-center text-main-400 font-medium hover:text-main-500 transition duration-150 ease-in-out">
+            Client Case Study &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section id="founders">
@@ -21,11 +114,11 @@ import { Linkedin, Twitter } from "lucide-react";
       </p>
     </div>
 
-    <div class="flex md:flex-col-reverse ">
+    <div class="flex md:flex-col-reverse mb-10 md:mb-0">
         <div class="md:w-1/2">
         <!-- <img src="/paul-simon.jpg" alt="Paul-Simon Emechebe" class="w-full h-auto object-cover" /> -->
         </div>
-        <div class="md:w-1/2"><div class=" p-10 flex flex-col ">
+        <div class="md:w-1/2"><div class=" md:p-10 flex flex-col ">
         <div class="flex flex-col items-start">
          
           <h3 class="text-2xl md:text-3xl text-slate-800 mb-1">Paul-Simon Emechebe</h3>
@@ -51,7 +144,7 @@ import { Linkedin, Twitter } from "lucide-react";
         
         <!-- <img src="/chibueze.png" alt="Paul-Simon Emechebe" class="w-full h-auto object-cover" /> -->
         </div>
-        <div class="md:w-1/2"><div class=" p-10 flex flex-col ">
+        <div class="md:w-1/2"><div class=" md:p-10 flex flex-col ">
         <div class="flex flex-col items-start">
           
           <h3 class="text-2xl md:text-3xl text-slate-800 mb-1">Chibueze Aniezeofor</h3>
@@ -76,6 +169,9 @@ import { Linkedin, Twitter } from "lucide-react";
    
   </div>
 </section>
+
+
+
 
 
 </BaseLayout>
