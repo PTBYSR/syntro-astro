@@ -28,6 +28,8 @@ content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
           500: "#921253"
         },
 
+      
+
         base: {
           25: '#fafafa',
           50: '#f9fafb',

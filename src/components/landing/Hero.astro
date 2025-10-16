@@ -35,7 +35,7 @@ const featuresList = [
     playsinline
     poster="/hero-frame.jpg"
     onloadeddata="this.previousElementSibling.style.opacity = 0; this.style.opacity = 1;"
-    class="absolute top-0 opacity"
+    class="absolute top-0 opacity-90 "
   >
     <source src="https://res.cloudinary.com/ptbysr/video/upload/v1760559177/hero-bg_f2o6uj.mp4" type="video/mp4" />
   </video>
@@ -48,16 +48,16 @@ const featuresList = [
   /> -->
 
   <!-- HERO CONTENT -->
-  <div class="relative z-10 px-5 pt-32 mx-auto md:px-12 lg:px-24 max-w-7xl text-center text-white">
-    <h2 class="max-w-[900px] text-5xl/snug sm:text-4xl/snug md:text-5xl/snug font-medium mb-4">
+  <div class="relative z-10 px-5 pt-32 mx-auto mb-20 md:mb-0 md:px-12 lg:px-24 w-screen md:max-w-7xl text-center text-white">
+    <h2 class="md:max-w-[900px] md:text-5xl/snug sm:text-4xl/snug text-3xl font-medium mb-4">
       Exceptional customer experiences for Africa with our AI agents.
     </h2>
     <p class="text-base font-medium text-slate-100">
       Sakura delivers seamless customer experiences at scale with AI agents.
     </p>
 
-    <div class="relative w-full mx-auto max-w-2xl items-center mt-20">
-      <div class="border border-black p-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
+    <div class="relative w-full md:mx-auto max-w-2xl items-center mt-20">
+      <div class=" border border-black md:p-10 pt-2 bg-white/10 backdrop-blur-md rounded-[34px] border border-white/20">
         <DisplayDemo client:load />
       </div>
     </div>

@@ -4,75 +4,85 @@ import MinimalChatbot from "../animation/MinimalChatbot";
 ---
 
 <section id="features">
-  <div class="px-8 pb-20 mx-auto md:px-12 lg:px-12 max-w-7xl">
+  <div class="md:px-8 px-3 pb-20 mx-auto md:px-12 lg:px-12 max-w-7xl">
     <div class="text-center max-w-2xl mx-auto lg:text-balance">
-      
       <h2
-        class="text-xl leading-tight tracking-tight sm:text-2xl md:text-3xl capitalize lg:text-4xl mt-4 font-medium text-base-900 lg:text-balance"
+        class="text-2xl leading-tight tracking-tight sm:text-2xl md:text-3xl capitalize lg:text-4xl mt-4 font-medium text-base-900 lg:text-balance"
       >
-       Your SOPs, your rules, your AI-agents.
+        Your SOPs, your rules, your AI-agents.
       </h2>
       <p class="text-base leading-normal mt-4 text-base-500 font-medium">
-        Tailor every interaction to your SOPs and brand for complete transparency and desired outcomes.
+        Tailor every interaction to your SOPs and brand for complete
+        transparency and desired outcomes.
       </p>
     </div>
 
-    <div class="max-w-7l mx-auto py-16 px-6">
-        
+    <div class="max-w-7l mx-auto py-16 md:px-6">
+      <div class=" md:grid md:grid-cols-3 md:grid-rows-2  gap-6 flex sm:flex-col flex-col  ">
 
-      <div class="grid grid-cols-3 grid-rows-2 gap-6">
         {/* 1️⃣ Voice/Chat/Email Card */}
-        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300">
+        <div
+          class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between transition-all duration-300 h-[50vh] md:h-auto"
+        >
           <div>
-            <h3 class="text-3xl   text-slate-800 mb-4">
-              Real-time Monitoring
-            </h3>
+            <h3 class="text-2xl md:text-3xl text-slate-800 mb-4">Real-time Monitoring</h3>
             <p class="text-gray-600 text-sm mb-6">
-              Monitor, analyze, and interrupt every conversations your AI agents has with your customers.
+              Monitor, analyze, and interrupt every conversations your AI agents
+              has with your customers.
             </p>
           </div>
-<div>
-  <img src="/monitor.svg" alt="Monitor" class=" " />
-</div>
-         
+          <div class="mt-6 w-[60%] h-auto md:w-auto">
+            <img src="/monitor.svg" alt="Monitor" class="" />
+          </div>
         </div>
 
         {/* 2️⃣ Language Card */}
-        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300" >
+        <div
+          class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between transition-all duration-300 h-[50vh] md:h-auto"
+        >
           <div>
-            <h3 class="text-3xl   text-slate-800 mb-4">
-              Fine-tuning
-            </h3>
+            <h3 class="text-2xl md:text-3xl text-slate-800 mb-4">Fine-tuning</h3>
             <p class="text-gray-600 text-sm mb-6">
-              Completely fine-tune the AI agents to follow your brand guidelines for tone, style, and personality.
+              Completely fine-tune the AI agents to follow your brand guidelines
+              for tone, style, and personality.
             </p>
           </div>
-<div class="h-full  w-full flex justify-center items-center">
-  <div class="flex items-center relative h-4 w-full ">
-                <img src="/gifs/g1.gif" alt="Chat" class="w-24 h-24 -bottom-[110px] right-[90px]  absolute" />
-                <img src="/gifs/g2.gif" alt="Chat" class="w-32 h-32 -top-[90px] absolute" />
-                <img src="/gifs/g3.gif" alt="Chat" class="w-20 h-20 right-[30px] absolute" />
-    </div>
-</div>
-          
+          <div class="h-full w-full flex justify-center items-center">
+            <div class="flex items-center relative h-4 w-full">
+              <img
+                src="/gifs/g1.gif"
+                alt="Chat"
+                class="w-24 h-24 -bottom-[110px] right-[90px] absolute"
+              />
+              <img
+                src="/gifs/g2.gif"
+                alt="Chat"
+                class="w-32 h-32 -top-[90px] absolute"
+              />
+              <img
+                src="/gifs/g3.gif"
+                alt="Chat"
+                class="w-20 h-20 right-[30px] absolute"
+              />
+            </div>
+          </div>
         </div>
 
         {/* 3️⃣ CSAT Rating Card */}
-        <div class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between  transition-all duration-300 " >
-         
-<div>
-            <h3 class="text-3xl   text-slate-800 mb-4">
-              SOPs Integration
-            </h3>
+        <div
+          class="row-span-2 rounded-3xl bg-base-300 bg-opacity-30 p-10 flex flex-col justify-between transition-all duration- h-[50vh] md:h-auto"
+        >
+          <div>
+            <h3 class="text-2xl md:text-3xl text-slate-800 mb-4">SOPs Integration</h3>
             <p class="text-gray-600 text-sm mb-6">
-              Seamlessly integrate your Standard Operating Procedures (SOPs) to ensure consistent and accurate customer interactions.
+              Seamlessly integrate your Standard Operating Procedures (SOPs) to
+              ensure consistent and accurate customer interactions.
             </p>
           </div>
-          
-<div>
-  <img src="/sop.svg" alt="SOP" class=" " />
-</div>
 
+          <div class="mt-6 w-[60%] h-auto md:w-auto">
+            <img src="/sop.svg" alt="SOP" class="" />
+          </div>
         </div>
       </div>
     </div>
