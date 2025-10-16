@@ -156,7 +156,7 @@ const DemoForm = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-white rounded-3xl shadow-xl p-10">
+        <div className="bg-white rounded-3xl shadow-xl p-6 pt-10 md:pt-0 md:p-10">
           <h3 className="text-4xl text-base-900 mb-5">Request a Demo</h3>
           <p className="text-slate-500 text-sm mb-6">
             Fill out the form below and we’ll reach out within 24 hours to
