@@ -20,7 +20,7 @@ const featuresList = [
 ];
 ---
 
-<section class="relative overflow-hidden min-h-screen flex items-center justify-center">
+<section class="relative overflow-hidden md:min-h-screen flex items-center justify-center">
 
   <!-- <img
     src="/overlay.png"
@@ -28,18 +28,19 @@ const featuresList = [
   /> -->
 
   <!-- VIDEO BACKGROUND -->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    poster="/hero-frame.jpg"
-    onloadeddata="this.previousElementSibling.style.opacity = 0; this.style.opacity = 1;"
-    class="absolute top-0 opacity-90 "
-  >
-    <source src="https://res.cloudinary.com/ptbysr/video/upload/v1760559177/hero-bg_f2o6uj.mp4" type="video/mp4" />
-  </video>
-  
+ <video
+  autoplay
+  muted
+  loop
+  playsinline
+  poster="/hero-frame.jpg"
+  onloadeddata="this.previousElementSibling.style.opacity = 0; this.style.opacity = 1;"
+  class="absolute top-0 left-0 w-full h-full object-cover object-center z-0 md:opacity-90"
+>
+  <source src="https://res.cloudinary.com/ptbysr/video/upload/v1760559177/hero-bg_f2o6uj.mp4" type="video/mp4" />
+</video>
+
+
   <img src="/thumbnail.png" class="absolute top-0 w-full  object-cover -z-[100] " />
 
   <!-- FALLBACK / FIRST FRAME -->
