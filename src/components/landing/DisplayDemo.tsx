@@ -127,17 +127,17 @@ export default function FlightSimulationPage() {
   const toolMessages = displayedSteps.filter(s => s.type === 'tool');
 
   return (
-    <div ref={containerRef} className="md:min-h- p-4 md:p-8">
+    <div ref={containerRef} className="md:min-h- p-4 md:p-8 relative">
+      <div className=' w-screen h-full absolute top-0 left-0'></div>
       <div className="max-w-7xl mx-auto flex justify-center flex-col lg:flex-row">
         
         {/* Left - Chat */}
         <div className="flex-1 flex flex-col items-center px-4">
-          <div className="text-center mb-8">
+          {/* <div className="text-center mb-8">
             <p className="text-base text-lg mb-6">
               Watch how Sakura handles a flight change request
             </p>
 
-            {/* Toggle Tools */}
             <div className="inline-flex items-center gap-3 bg-white px-4 py-2 rounded-full shadow-sm">
               <span className="text-sm text-slate-600">Show AI Tools</span>
               <button
@@ -153,7 +153,7 @@ export default function FlightSimulationPage() {
                 />
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Chat Container */}
           <div className="bg-base-950 min-w-[350px] rounded-[34px] max-w-[500px] shadow-xl overflow-hidden md:mb-6">
