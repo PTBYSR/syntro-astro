@@ -97,7 +97,7 @@ const DemoForm = () => {
   return (
     <section id="demo" className=" py-24">
         
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 md:px-12 lg:px-16 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 md:gap-10 gap-20  px-6 md:px-12 lg:px-16 items-center">
         {/* LEFT SIDE */}
         {/* LEFT SIDE */}
         <div className="rounded-3xl md:p-12 flex flex-col justify-center text-left">
@@ -156,7 +156,7 @@ const DemoForm = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-white rounded-3xl shadow-xl p-6 pt-10  md:p-10">
+        <div className="bg-white rounded-3xl shadow-xl p-6 py-10  md:p-10">
           <h3 className="text-4xl text-base-900 mb-5">Request a Demo</h3>
           <p className="text-slate-500 text-sm mb-6">
             Fill out the form below and we’ll reach out within 24 hours to
