@@ -93,34 +93,51 @@ export default function FlightSimulationPage() {
   }, [hasStarted]);
 
   const runSimulation = async () => {
-    setIsRunning(true);
-    setDisplayedSteps([]);
-    setActiveFlow([]);
+  setIsRunning(true);
+  setDisplayedSteps([]);
+  setActiveFlow([]);
 
-    for (let i = 0; i < conversation.length; i++) {
-      const step = conversation[i];
+  for (let i = 0; i < conversation.length; i++) {
+    const step = conversation[i];
 
-      setDisplayedSteps(prev => [...prev, { id: step.id, type: 'user', text: step.user }]);
-      await new Promise(resolve => setTimeout(resolve, 600));
+    // User message
+    setDisplayedSteps(prev => [...prev, { id: step.id, type: 'user', text: step.user }]);
+    await new Promise(resolve => setTimeout(resolve, 600));
 
-      setIsTyping(true);
-      await new Promise(resolve => setTimeout(resolve, 800));
-      setIsTyping(false);
+    // Typing indicator
+    setIsTyping(true);
+    await new Promise(resolve => setTimeout(resolve, 800));
+    setIsTyping(false);
 
-      for (const reasoning of step.flow) {
-        setActiveFlow(prev => [...prev, reasoning]);
-        await new Promise(resolve => setTimeout(resolve, 500));
-      }
-
-      setDisplayedSteps(prev => [...prev, { id: step.id, type: 'agent', text: step.agent }]);
-      await new Promise(resolve => setTimeout(resolve, 600));
-
-      setDisplayedSteps(prev => [...prev, { id: step.id, type: 'tool', text: step.tool }]);
-      await new Promise(resolve => setTimeout(resolve, 700));
+    // Agent reasoning flow
+    for (const reasoning of step.flow) {
+      setActiveFlow(prev => [...prev, reasoning]);
+      await new Promise(resolve => setTimeout(resolve, 500));
     }
 
-    setIsRunning(false);
-  };
+    // Agent reply
+    setDisplayedSteps(prev => [...prev, { id: step.id, type: 'agent', text: step.agent }]);
+    await new Promise(resolve => setTimeout(resolve, 600));
+
+    // Tool used
+    setDisplayedSteps(prev => [...prev, { id: step.id, type: 'tool', text: step.tool }]);
+    await new Promise(resolve => setTimeout(resolve, 700));
+  }
+
+  setIsRunning(false);
+
+  // ✅ Add 2-second delay before restarting the simulation
+  await new Promise(resolve => setTimeout(resolve, 800));
+
+  // Reset state
+  setDisplayedSteps([]);
+  setActiveFlow([]);
+  setIsTyping(false);
+
+  // Restart simulation (loop)
+  runSimulation();
+};
+
 
   const userMessages = displayedSteps.filter(s => s.type === 'user');
   const agentMessages = displayedSteps.filter(s => s.type === 'agent');
