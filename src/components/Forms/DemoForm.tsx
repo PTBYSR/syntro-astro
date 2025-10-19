@@ -69,7 +69,7 @@ const DemoForm = () => {
     }
 
     setStatus({
-      message: "✅ Demo request submitted successfully!",
+      message: "✅ Demo request submitted successfully! We'll be in touch via your email.",
       type: "success",
     });
 
@@ -204,6 +204,21 @@ const DemoForm = () => {
                 value={formData.company_name}
                 onChange={handleChange}
                 placeholder="Company Inc."
+                required
+                className="w-full border border-slate-300 focus:border-main-400 focus:ring-main-400 rounded-xl px-4 py-3 text-sm outline-none"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1">
+                Link to Company Website or any platform (e.g LinkedIn, Instagram)
+              </label>
+              <input
+                type="text"
+                name="company_name"
+                value={formData.company_name}
+                onChange={handleChange}
+                placeholder="://"
                 required
                 className="w-full border border-slate-300 focus:border-main-400 focus:ring-main-400 rounded-xl px-4 py-3 text-sm outline-none"
               />
